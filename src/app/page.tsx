@@ -1,25 +1,48 @@
 export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-background p-6">
-      <div className="w-full max-w-md rounded-xl border border-border bg-card p-8 shadow-sm">
-        <h1 className="text-2xl font-bold text-primary">Painel Operacional</h1>
+      <section className="w-full max-w-lg rounded-xl border border-border bg-card p-8 shadow-sm">
+        <div className="space-y-2">
+          <span className="text-sm font-medium text-secondary">
+            PAINEL OPERACIONAL
+          </span>
 
-        <p className="mt-2 text-text-secondary">
-          Sistema operacional logístico
-        </p>
+          <h1 className="text-3xl font-bold tracking-tight text-primary">
+            Controle da operação
+          </h1>
 
-        <div className="mt-6 flex gap-3">
-          <div className="rounded-lg bg-success px-4 py-2 text-white">
-            Sucesso
-          </div>
-
-          <div className="rounded-lg bg-warning px-4 py-2 text-white">
-            Atenção
-          </div>
-
-          <div className="rounded-lg bg-danger px-4 py-2 text-white">Erro</div>
+          <p className="text-sm leading-6 text-text-secondary">
+            Acompanhe produção, metas, desempenho e indicadores operacionais em
+            um único lugar.
+          </p>
         </div>
-      </div>
+
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div className="rounded-lg border border-border p-4">
+            <span className="text-xs text-text-secondary">Produção</span>
+
+            <strong className="mt-1 block text-xl font-bold text-primary">
+              92%
+            </strong>
+          </div>
+
+          <div className="rounded-lg border border-border p-4">
+            <span className="text-xs text-text-secondary">Meta</span>
+
+            <strong className="mt-1 block text-xl font-bold text-success">
+              100%
+            </strong>
+          </div>
+
+          <div className="rounded-lg border border-border p-4">
+            <span className="text-xs text-text-secondary">Alertas</span>
+
+            <strong className="mt-1 block text-xl font-bold text-warning">
+              03
+            </strong>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
